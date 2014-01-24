@@ -6,7 +6,7 @@ class Wiki
         'md' => 'Markdown',
         'htm' => 'HTML', 'html' => 'HTML'
     );
-    protected $_ignore = "/^\..*|^CVS$/"; // Match dotfiles and CVS
+    protected $_ignore = "/^\..*|^CVS$|(png|jpg|jpeg|gif|bmp)$/"; // Match dotfiles, CVS and images
 	protected $_force_unignore = false; // always show these files (false to disable)
 
     protected $_action;
